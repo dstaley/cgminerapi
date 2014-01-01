@@ -1,4 +1,5 @@
-/* Package cgminerapi provides a client for using the cgminer API.
+/*
+Package cgminerapi provides a client for using the cgminer API.
 
 Construct a new cgminer client, then use the various services on the client to
 access different parts of the cgminer RPC API. For example:
