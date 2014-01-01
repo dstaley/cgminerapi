@@ -7,12 +7,12 @@ access different parts of the cgminer RPC API. For example:
 	client := cgminerapi.NewCgminerAPI("localhost", "4028")
 
 	command := cgminerapi.APICommand{Method: "summary"}
-	resp, err := api.Send(&command)
+	resp, err := client.Send(&command)
 
 Set optional parameters for an method using an APICommand's Parameter field.
 
 	command := cgminerapi.APICommand{Method: "gpu", Parameter: "0"}
-	resp, err := api.Send(&command)
+	resp, err := client.Send(&command)
 */
 package cgminerapi
 
