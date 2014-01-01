@@ -105,7 +105,7 @@ type Devs struct {
 	Enabled             string  `json:"Enabled,omitempty"`
 	FanPercent          float64 `json:"Fan Percent,omitempty"`
 	FanSpeed            int     `json:"Fan Speed,omitempty"`
-	GPU                 float64 `json:"GPU,omitempty"`
+	GPU                 *int    `json:"GPU,omitempty"`
 	GPUActivity         int     `json:"GPU Activity,omitempty"`
 	GPUClock            int     `json:"GPU Clock,omitempty"`
 	GPUVoltage          float64 `json:"GPU Voltage,omitempty"`
@@ -118,7 +118,7 @@ type Devs struct {
 	MHS5s               float64 `json:"MHS 5s,omitempty"`
 	MHSav               float64 `json:"MHS av,omitempty"`
 	MemoryClock         int     `json:"Memory Clock,omitempty"`
-	Powertune           int     `json:"Powertune,omitempty"`
+	Powertune           *int    `json:"Powertune,omitempty"`
 	Rejected            int     `json:"Rejected,omitempty"`
 	Status              string  `json:"Status,omitempty"`
 	Temperature         float64 `json:"Temperature,omitempty"`
